@@ -58,35 +58,54 @@ h1, h2, h3, h4 {
   /* border-bottom-width: 2px; */
   border-radius : 0px;
   /* height: 40px; */
+  background-color: #fff;
 }
 
 .navbar-ofgirls .navbar-brand {
-  background-image: url('./srcs/logo.png');
+  /* background-image: url('./srcs/logo.png'); */
   background-size: cover;
   width: 170px;
   height: 99px;
+  line-height: 59px;
   margin-left: 0px !important;
+  font-size:40px;
+  font-weight: bold;
+  color: #A561CE;
 }
 
 .navbar-ofgirls .navbar-nav li > a {
-  font-size: 17px;
+  font-size: 20px;
 }
 .navbar-ofgirls .navbar-nav li > a:hover,
 .navbar-ofgirls .navbar-nav li > a:focus {
   color: #A561CE;
   border-bottom: 2px solid #A561CE;
 }
-
 .navbar-ofgirls .navbar-header .navbar-toggle {
   margin-top: 32px;
   margin-bottom: 33px;
 }
-
+.form-group {
+  margin: 50px 0 !important;
+}
 @media screen and (min-width: 768px) {
   .navbar-ofgirls .navbar-brand,
   .navbar-ofgirls .navbar-nav li > a {
     height: 99px;
     line-height: 70px;
-
+    margin: auto 10px;
   }
+  .container {
+    width : 900px;
+  }
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #A561CE;
 }
