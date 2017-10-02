@@ -1,0 +1,2 @@
+# ofgirlspycharm
+django app
