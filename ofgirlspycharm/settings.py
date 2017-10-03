@@ -25,7 +25,7 @@ SECRET_KEY = '7nw74emn4hi220nom7xm*m)zzg!!p1e@pa7!1&w$+dv)sfpw^8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_jinja',
+#    'django_jinja',
     'report',
     'bamboo',
 ]

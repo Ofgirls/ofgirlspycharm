@@ -50,19 +50,19 @@
             var take = document.getElementById('take').value;
             var pay = total_time * 6030;
             var total_pay = pay - take;
-            var text = '제 이름은 {{name}}입니다.' +
-                '저는 {{place}}에서 {{start}}부터 {{end}}까지 일을 했습니다.' +
-                '총 {{total_time}} 시간을 일했으며 최저 임금 6,030원이므로 {{pay}} 원을 받야아 합니다.' +
-                '그런데 제가 받은 액수는 총 {{take}}원입니다.' +
-                '따라서 {{total_pay}} 원을 {{place}}으로부터 받을 수 있도록 선처해주세요.';
-            text = text.replace(/{{start}}/g, start);
-            text = text.replace(/{{end}}/g, end);
-            text = text.replace(/{{name}}/g, name);
-            text = text.replace(/{{place}}/g, place);
-            text = text.replace(/{{total_time}}/g, total_time);
-            text = text.replace(/{{take}}/g, take);
-            text = text.replace(/{{pay}}/g, pay);
-            text = text.replace(/{{total_pay}}/g, total_pay);
+            var text = '제 이름은 name입니다.' +
+                '저는 place에서 start부터 end까지 일을 했습니다.' +
+                '총 total_time 시간을 일했으며 최저 임금 6,030원이므로 pay 원을 받야아 합니다.' +
+                '그런데 제가 받은 액수는 총 take원입니다.' +
+                '따라서 total_pay원을 place으로부터 받을 수 있도록 선처해주세요.';
+            text = text.replace(/start/g, start);
+            text = text.replace(/end/g, end);
+            text = text.replace(/name/g, name);
+            text = text.replace(/place/g, place);
+            text = text.replace(/total_time/g, total_time);
+            text = text.replace(/take/g, take);
+            text = text.replace(/pay/g, pay);
+            text = text.replace(/total_pay/g, total_pay);
             alert(text);
             return false;
         }
