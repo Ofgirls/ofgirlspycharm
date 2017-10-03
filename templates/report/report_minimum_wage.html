@@ -56,14 +56,14 @@
                 '그런데 제가 받은 액수는 총 {{take}}원입니다.' +
                 '따라서 {{total_pay}} 원을 {{place}}으로부터 받을 수 있도록 선처해주세요.';
             text = text.replace(/{{start}}/g, start);
-                text = text.replace(/{{end}}/g, end);
-                    text = text.replace(/{{name}}/g, name);
-                        text = text.replace(/{{place}}/g, place);
-                            text = text.replace(/{{total_time}}/g, total_time);
-                                text = text.replace(/{{take}}/g, take);
-                                    text = text.replace(/{{pay}}/g, pay);
-                                        text = text.replace(/{{total_pay}}/g, total_pay);
-                                            alert(text);
+            text = text.replace(/{{end}}/g, end);
+            text = text.replace(/{{name}}/g, name);
+            text = text.replace(/{{place}}/g, place);
+            text = text.replace(/{{total_time}}/g, total_time);
+            text = text.replace(/{{take}}/g, take);
+            text = text.replace(/{{pay}}/g, pay);
+            text = text.replace(/{{total_pay}}/g, total_pay);
+            alert(text);
             return false;
         }
     </script>
